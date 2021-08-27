@@ -6,5 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Github-Search';
+  title = 'Github Search';
+  nav_url = '/repos';
+  nav_text = 'repositories';
 }
