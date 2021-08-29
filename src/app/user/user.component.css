@@ -1,12 +1,16 @@
 .my-info {
     background-color: #4E4E50;
     color: white !important;
+    border-radius: 10px;
 }
 
 .start {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+}
+.repo-name {
+    color: #6F2232;
 }
 
 .alert{
@@ -16,11 +20,25 @@
     border: #6F2232;
 }
 
-.list-info {
+li {
+    margin: 8px;
     background-color: #6F2232 !important;
+
+}
+
+.list-info {
+    /* background-color: #6F2232 !important; */
     color: white;
 }
 
 .bio-text {
     margin-top: 5px;
+    background-color: #6F2232;
+    padding: 5px;
+}
+
+.repo-card {
+    background-color: #4E4E50;
+    color: white;
+    border-radius: 10px;
 }

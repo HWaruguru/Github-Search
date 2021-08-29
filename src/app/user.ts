@@ -1,15 +1,15 @@
 export class User {
     username: string;
-        email: string;
-        location: string;
-        created_at: string;
-        followers: number;
-        following: number;
-        repos: number;
-        gists: number;
-        bio: string;
-        avatar: string;
-        name?: string;
+    email: string;
+    location: string;
+    created_at: string;
+    followers: number;
+    following: number;
+    repos: number;
+    gists: number;
+    bio: string;
+    avatar: string;
+    name?: string;
     constructor(
         username: string,
         email: string,

@@ -1,4 +1,16 @@
 .navbar {
-    background-color: #C19434 !important;
-    color: #34421E !important;
+    background-color: #4E4E50 !important;
+    color: white !important;  
+    padding-right: 8px;
+    padding-left: 8px;
+    font-size: 23px;
+}
+
+.brand-name {
+    font-size: 25px;
+}
+
+
+.nav-search{
+    color: #6F2232;
 }

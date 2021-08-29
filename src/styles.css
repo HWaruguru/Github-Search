@@ -1,4 +1,6 @@
 @import "~bootstrap/dist/css/bootstrap.css";
 body {
     background-color: #1A1A1D;
+    font-family: 'Special Elite', cursive;
+    font-size: 20px;
 }
