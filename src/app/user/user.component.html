@@ -1,1 +1,29 @@
-
+<div class="card my-info" *ngIf="user">
+    <div class="card-header">
+      <span *ngIf="user.name">{{user.name}}</span>
+      <span *ngIf="!user.name">{{user.username}}</span>
+    </div>
+    <div class="card-body">
+      <div class="row">
+        <div class="col-md-4">
+          <img class="img-thumbnail" [src]="user.avatar" alt="users avatar" />
+          <p class="bio-text">{{user.bio}}</p>
+        </div>
+        <div class="col-md-8">
+          <div class="stats">
+            <span class="alert alert-secondary">{{user.followers}} Followers</span>
+            <span class="alert alert-secondary">Following {{user.following}}</span>
+            <span class="alert alert-secondary">{{user.repos}} Repos</span>
+            <span class="alert alert-secondary">{{user.gists}} Gists</span>
+          </div>
+          <br>
+          <ul class="list-group list-info">
+            <li class="list-group-item list-info">Username: {{user.username}}</li>
+            <li class="list-group-item list-info">Email: {{user.email}}</li>
+            <li class="list-group-item list-info">Location: {{user.location}}</li>
+            <li class="list-group-item list-info">Joined: {{user.created_at}}</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>

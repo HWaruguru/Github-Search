@@ -1,0 +1,26 @@
+.my-info {
+    background-color: #4E4E50;
+    color: white !important;
+}
+
+.start {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.alert{
+    background-color: #6F2232 !important;
+    color: white;
+    margin-right: 4px;
+    border: #6F2232;
+}
+
+.list-info {
+    background-color: #6F2232 !important;
+    color: white;
+}
+
+.bio-text {
+    margin-top: 5px;
+}
