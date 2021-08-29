@@ -5,6 +5,7 @@ export class Repository {
     language: string;
     homepage: string;
     created_by: string;
+    created_at: string;
     constructor(
         name: string,
         description: string,
@@ -12,6 +13,7 @@ export class Repository {
         language: string,
         homepage: string,
         created_by: string,
+        created_at: string
     ) {
         this.name = name;
         this.description = description;
@@ -19,5 +21,6 @@ export class Repository {
         this.homepage = homepage;
         this.language = language;
         this.created_by = created_by;
+        this.created_at = created_at;
     }
 }

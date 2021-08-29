@@ -1,1 +1,30 @@
-<p>repository works!</p>
+<br>
+<div class="card-repos" *ngIf="repos">
+  <div class="card-header">
+    Repositories
+  </div>
+  <div class="card-body">
+    <div class="row">
+      <div class="col-md-12">
+        <div *ngFor="let repo of repos">
+          <div class="row">
+            <div class="col-md-6">
+              <h4><a class="link"href="{{repo.homepage}}">{{repo.name}}</a></h4>
+              <p>{{repo.description}}</p>
+            </div>
+            <div class="col-md-6">
+                <ul class="list-group repo-list">
+                    <li class="list-group-item">Stars: {{repo.stargazers}}</li>
+                    <li class="list-group-item">Lang: {{repo.language}}</li>
+                    <li class="list-group-item">Homepage: <a class="homepage"href="{{repo.homepage}}">{{repo.homepage}}</a></li>
+                    <li class="list-group-item">Created: {{repo.created_at}}</li>
+                  </ul>
+            </div>
+          </div>
+          <hr>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+

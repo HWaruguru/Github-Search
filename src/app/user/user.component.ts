@@ -11,11 +11,11 @@ import { User } from '../user';
 export class UserComponent implements OnInit {
   user: User = new User("HWaruguru", "hannah.waruguru8@gmail.com", "Nairobi", "2019-03-04T21:09:09Z", 6, 7, 20,28,  "I am an upcoming Software Developer currently studying Software Development at Moringa School.", "https://avatars.githubusercontent.com/u/48224930?v=4", "Hannah Waruguru")
   repos: Repository[] = [
-    new Repository("Inspirational-Quotes", "An insipirational quotes application that allows users to read and add quotes.", 5, "JavaScript","github.com/Inspirational-Quotes", "HWaruguru"),
-    new Repository("Inspirational-Quotes", "An insipirational quotes application that allows users to read and add quotes.", 5, "JavaScript","github.com/Inspirational-Quotes", "HWaruguru"),
-    new Repository("Inspirational-Quotes", "An insipirational quotes application that allows users to read and add quotes.", 5, "JavaScript","github.com/Inspirational-Quotes", "HWaruguru"),
-    new Repository("Inspirational-Quotes", "An insipirational quotes application that allows users to read and add quotes.", 5, "JavaScript","github.com/Inspirational-Quotes", "HWaruguru"),
-    new Repository("Inspirational-Quotes", "An insipirational quotes application that allows users to read and add quotes.", 5, "JavaScript","github.com/Inspirational-Quotes", "HWaruguru"),
+    new Repository("Inspirational-Quotes", "An insipirational quotes application that allows users to read and add quotes.", 5, "JavaScript","github.com/Inspirational-Quotes", "HWaruguru" ,"2019-03-04T21:09:09Z"),
+    new Repository("Inspirational-Quotes", "An insipirational quotes application that allows users to read and add quotes.", 5, "JavaScript","github.com/Inspirational-Quotes", "HWaruguru" ,"2019-03-04T21:09:09Z"),
+    new Repository("Inspirational-Quotes", "An insipirational quotes application that allows users to read and add quotes.", 5, "JavaScript","github.com/Inspirational-Quotes", "HWaruguru" ,"2019-03-04T21:09:09Z"),
+    new Repository("Inspirational-Quotes", "An insipirational quotes application that allows users to read and add quotes.", 5, "JavaScript","github.com/Inspirational-Quotes", "HWaruguru" ,"2019-03-04T21:09:09Z"),
+    new Repository("Inspirational-Quotes", "An insipirational quotes application that allows users to read and add quotes.", 5, "JavaScript","github.com/Inspirational-Quotes", "HWaruguru" ,"2019-03-04T21:09:09Z"),
   ];
 
 

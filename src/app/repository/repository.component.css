@@ -1,0 +1,18 @@
+.card-repos{
+    background-color: #4E4E50;
+    color: white;
+    border-radius: 10px;
+}
+
+li {
+    margin: 8px;
+    background-color: #6F2232 !important;
+    color: white;
+}
+.link {
+    color: #6F2232;
+}
+
+.homepage {
+    color: #1A1A1D;
+}
