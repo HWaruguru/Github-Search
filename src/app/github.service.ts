@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Observable } from 'rxjs';
+import { environment } from '../environments/environment'
 import { User } from './user';
 import { Repository } from './repository';
 
@@ -17,7 +18,7 @@ export class GithubService {
     const url = `${this.githubUrl}/users/${username}`
     let promise = new Promise((resolve, reject) => {
       this.http
-      .get<any>(url, ({headers: new HttpHeaders({ Authorization: `token ${process.env.APIKEY}`})}))
+      .get<any>(url, ({headers: new HttpHeaders({ Authorization: `token ${environment.APIKEY}`})}))
       .toPromise()
       .then(
         res => {
@@ -37,7 +38,7 @@ export class GithubService {
     const url = `${this.githubUrl}/users/${username}/repos`;
     let promise = new Promise((resolve, reject) => {
       this.http
-      .get<any>(url, ({headers: new HttpHeaders({ Authorization: `token ${process.env.APIKEY}`})}))
+      .get<any>(url, ({headers: new HttpHeaders({ Authorization: `token ${environment.APIKEY}`})}))
       .toPromise()
       .then(
         res => {
@@ -58,7 +59,7 @@ export class GithubService {
     const url = `${this.githubUrl}/search/repositories?q=${repo}`;
     let promise = new Promise((resolve, reject) => {
       this.http
-      .get<any>(url, ({headers: new HttpHeaders({ Authorization: `token ${process.env.APIKEY}`})}))
+      .get<any>(url, ({headers: new HttpHeaders({ Authorization: `token ${environment.APIKEY}`})}))
       .toPromise()
       .then(
         res => {
