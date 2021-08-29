@@ -1,5 +1,5 @@
 <br>
-<input type="text" class="form-control" placeholder="Search Repo...">
+<input type="text" class="form-control search-bar" placeholder="Search Repo...">
 <br>
 <div class="card-repos" *ngIf="repos">
   <div class="card-header">
@@ -19,7 +19,7 @@
                     <li class="list-group-item">Stars: {{repo.stargazers}}</li>
                     <li class="list-group-item">Lang: {{repo.language}}</li>
                     <li class="list-group-item">Homepage: <a class="homepage"href="{{repo.homepage}}">{{repo.homepage}}</a></li>
-                    <li class="list-group-item">Created: {{repo.created_at}}</li>
+                    <li class="list-group-item">Created: {{repo.created_at | datePipe}}</li>
                   </ul>
             </div>
           </div>

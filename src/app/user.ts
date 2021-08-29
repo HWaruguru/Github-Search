@@ -2,7 +2,7 @@ export class User {
     username: string;
     email: string;
     location: string;
-    created_at: string;
+    created_at: Date;
     followers: number;
     following: number;
     repos: number;
@@ -14,7 +14,7 @@ export class User {
         username: string,
         email: string,
         location: string,
-        created_at: string,
+        created_at: Date,
         followers: number,
         following: number,
         repos: number,
