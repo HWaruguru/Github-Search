@@ -18,7 +18,7 @@ export class GithubService {
     const url = `${this.githubUrl}/users/${username}`
     let promise = new Promise((resolve, reject) => {
       this.http
-      .get<any>(url, ({headers: new HttpHeaders({ Authorization: `token ${environment.apiKey}`})}))
+      .get<any>(url, ({headers: new HttpHeaders({ Authorization: `token ${environment.APIKEY}`})}))
       .toPromise()
       .then(
         res => {
@@ -38,7 +38,7 @@ export class GithubService {
     const url = `${this.githubUrl}/users/${username}/repos`;
     let promise = new Promise((resolve, reject) => {
       this.http
-      .get<any>(url, ({headers: new HttpHeaders({ Authorization: `token ${environment.apiKey}`})}))
+      .get<any>(url, ({headers: new HttpHeaders({ Authorization: `token ${environment.APIKEY}`})}))
       .toPromise()
       .then(
         res => {
@@ -59,7 +59,7 @@ export class GithubService {
     const url = `${this.githubUrl}/search/repositories?q=${repo}`;
     let promise = new Promise((resolve, reject) => {
       this.http
-      .get<any>(url, ({headers: new HttpHeaders({ Authorization: `token ${environment.apiKey}`})}))
+      .get<any>(url, ({headers: new HttpHeaders({ Authorization: `token ${environment.APIKEY}`})}))
       .toPromise()
       .then(
         res => {
