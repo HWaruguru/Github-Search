@@ -1,5 +1,5 @@
 export class User {
-    username: string;
+    login: string;
     email: string;
     location: string;
     created_at: Date;
@@ -8,10 +8,10 @@ export class User {
     repos: number;
     gists: number;
     bio: string;
-    avatar: string;
+    avatar_url: string;
     name?: string;
     constructor(
-        username: string,
+        login: string,
         email: string,
         location: string,
         created_at: Date,
@@ -20,10 +20,10 @@ export class User {
         repos: number,
         gists: number,
         bio: string,
-        avatar: string,
+        avatar_url: string,
         name?: string,
     ) {
-        this.username = username;
+        this.login = login;
         this.email = email;
         this.location = location;
         this.created_at = created_at;
@@ -32,7 +32,7 @@ export class User {
         this.repos = repos;
         this.bio = bio;
         this.gists = gists;
-        this.avatar = avatar;
+        this.avatar_url = avatar_url;
         this.name = name;
     }
 }

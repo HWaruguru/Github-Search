@@ -1,5 +1,5 @@
 <br>
-<input type="text" class="form-control search-bar"  placeholder="Search User...">
+<input type="text" class="form-control search-bar"  name="username" [(ngModel)]="username" (keyup)="search()"  placeholder="Search User...">
 <br>
 <div class="card my-info" *ngIf="user">
     <div class="card-header">
@@ -9,7 +9,7 @@
     <div class="card-body">
       <div class="row">
         <div class="col-md-4">
-          <img class="img-thumbnail" [src]="user.avatar" alt="users avatar" />
+          <img class="img-thumbnail" [src]="user.avatar_url" alt="users avatar" />
           <p class="bio-text">{{user.bio}}</p>
         </div>
         <div class="col-md-8">
@@ -21,7 +21,7 @@
           </div>
           <br>
           <ul class="list-group list-info">
-            <li class="list-group-item list-info">Username: {{user.username}}</li>
+            <li class="list-group-item list-info">Username: {{user.login}}</li>
             <li class="list-group-item list-info">Email: {{user.email}}</li>
             <li class="list-group-item list-info">Location: {{user.location}}</li>
             <li class="list-group-item list-info">Joined: {{user.created_at | datePipe}}</li>
@@ -48,7 +48,7 @@
             </div>
             <div class="col-md-6">
               <div class="stats">
-                <span class="alert alert-secondary">{{repo.stargazers}} Stars</span>
+                <span class="alert alert-secondary">{{repo.stargazers_count}} Stars</span>
                 <span class="alert alert-secondary" *ngIf="repo.language">{{repo.language}}</span>
               </div>
             </div>

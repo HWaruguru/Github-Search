@@ -1,7 +1,7 @@
 
 <nav class="navbar">
   <span class="navbar-brand brand-name">{{title}}</span>
-  <span><a class="nav-search"*ngIf='nav_url' [routerLink]="[nav_url]">Search for {{nav_text}} instead?</a></span>
+  <span><a class="nav-search" *ngIf='nav_url' [routerLink]="[nav_url]">Search for {{nav_text}} instead?</a></span>
 </nav>
 <div class="container">
   <router-outlet></router-outlet>

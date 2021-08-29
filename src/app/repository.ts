@@ -1,7 +1,7 @@
 export class Repository {
     name: string;
     description: string;
-    stargazers: number;
+    stargazers_count: number;
     language: string;
     homepage: string;
     created_by: string;
@@ -9,7 +9,7 @@ export class Repository {
     constructor(
         name: string,
         description: string,
-        stargazers: number,
+        stargazers_count: number,
         language: string,
         homepage: string,
         created_by: string,
@@ -17,7 +17,7 @@ export class Repository {
     ) {
         this.name = name;
         this.description = description;
-        this.stargazers = stargazers;
+        this.stargazers_count = stargazers_count;
         this.homepage = homepage;
         this.language = language;
         this.created_by = created_by;
