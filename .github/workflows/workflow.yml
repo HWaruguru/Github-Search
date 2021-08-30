@@ -27,4 +27,6 @@ jobs:
         uses: JamesIves/github-pages-deploy-action@4.1.1
         with:
           branch: gh-pages # The branch the action should deploy to.
-          folder: dist/Github-Search # The folder the action should deploy.  
+          folder: dist/Github-Search # The folder the action should deploy.
+        env:
+          APIKEY: ${{ secrets.APIKEY }}
