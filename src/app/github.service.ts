@@ -11,7 +11,6 @@ import { Repository } from './repository';
 export class GithubService {
 
   private githubUrl = "https://api.github.com"
-  private pac = "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"
 
   constructor(private http: HttpClient) { }
 
@@ -19,7 +18,7 @@ export class GithubService {
     const url = `${this.githubUrl}/users/${username}`
     let promise = new Promise((resolve, reject) => {
       this.http
-      .get<any>(url, ({headers: new HttpHeaders({ Authorization: `token ${this.pac}`})}))
+      .get<any>(url, ({headers: new HttpHeaders({ Authorization: `token ${environment.APIKEY}`})}))
       .toPromise()
       .then(
         res => {
@@ -39,7 +38,7 @@ export class GithubService {
     const url = `${this.githubUrl}/users/${username}/repos`;
     let promise = new Promise((resolve, reject) => {
       this.http
-      .get<any>(url, ({headers: new HttpHeaders({ Authorization: `token ${this.pac}`})}))
+      .get<any>(url, ({headers: new HttpHeaders({ Authorization: `token ${environment.APIKEY}`})}))
       .toPromise()
       .then(
         res => {
@@ -60,7 +59,7 @@ export class GithubService {
     const url = `${this.githubUrl}/search/repositories?q=${repo}`;
     let promise = new Promise((resolve, reject) => {
       this.http
-      .get<any>(url, ({headers: new HttpHeaders({ Authorization: `token ${this.pac}`})}))
+      .get<any>(url, ({headers: new HttpHeaders({ Authorization: `token ${environment.APIKEY}`})}))
       .toPromise()
       .then(
         res => {
